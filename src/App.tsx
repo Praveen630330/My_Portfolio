@@ -5,7 +5,6 @@ function App() {
   const [scrollY, setScrollY] = useState(0)
   const [visibleSections, setVisibleSections] = useState<Set<string>>(new Set())
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 })
-  const [isHeroVisible, setIsHeroVisible] = useState(true)
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const heroRef = useRef<HTMLDivElement>(null)
 
@@ -22,9 +21,6 @@ function App() {
   useEffect(() => {
     const handleScroll = () => {
       setScrollY(window.scrollY)
-      
-      // Check if hero is visible
-      setIsHeroVisible(window.scrollY < 300)
       
       // Trigger bubble animation for hero title when scrolling
       if (heroRef.current && window.scrollY < 300) {

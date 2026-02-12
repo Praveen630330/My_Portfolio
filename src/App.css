@@ -1555,11 +1555,6 @@ section h2::after {
     font-size: 0.8rem;
   }
 }
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  line-height: 1.6;
-  background: linear-gradient(135deg, #000000 0%, #0d0d0d 100%);
-}
 
 .app {
   min-height: 100vh;
