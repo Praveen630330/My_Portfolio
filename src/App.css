@@ -406,6 +406,67 @@ section h3 {
   transform: translateX(4px);
 }
 
+/* ====== RESUME BUTTON ====== */
+.resume-button {
+  background: linear-gradient(135deg, #00d9ff 0%, #00ff88 100%);
+  color: #000000;
+  border: 2px solid transparent;
+  padding: 0.95rem 2.2rem;
+  font-size: 1rem;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 700;
+  transition: all var(--transition);
+  box-shadow: 0 8px 25px rgba(0, 217, 255, 0.3);
+  animation: fadeInUp 1s ease-out 0.8s both;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin: 0.5rem auto 0;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.resume-button::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.15) 0%, transparent 50%);
+  opacity: 0;
+  transition: opacity var(--transition);
+}
+
+.resume-button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 217, 255, 0.5);
+  background: linear-gradient(135deg, #00ff88 0%, #00d9ff 100%);
+}
+
+.resume-button:hover::before {
+  opacity: 1;
+}
+
+.resume-button:active {
+  transform: translateY(-2px);
+}
+
+.resume-icon {
+  position: relative;
+  z-index: 1;
+  font-size: 1.2rem;
+}
+
+.resume-text {
+  position: relative;
+  z-index: 1;
+  transition: transform var(--transition);
+}
+
+.resume-button:hover .resume-text {
+  transform: scale(1.05);
+}
+
 .scroll-indicator {
   position: absolute;
   bottom: 30px;
@@ -1284,6 +1345,11 @@ section h2::after {
     font-size: 1rem;
   }
 
+  .resume-button {
+    padding: 0.8rem 1.6rem;
+    font-size: 0.95rem;
+  }
+
   .summary-details {
     grid-template-columns: 1fr;
   }
@@ -1460,6 +1526,16 @@ section h2::after {
     display: none;
   }
 
+  .resume-button {
+    padding: 0.65rem 1.2rem;
+    font-size: 0.85rem;
+    gap: 0.4rem;
+  }
+
+  .resume-icon {
+    font-size: 1rem;
+  }
+
   .summary-details {
     gap: 0.8rem;
   }
@@ -1575,6 +1651,11 @@ section h2::after {
   }
 
   .hero-subtitle {
+    font-size: 0.8rem;
+  }
+
+  .resume-button {
+    padding: 0.6rem 1rem;
     font-size: 0.8rem;
   }
 

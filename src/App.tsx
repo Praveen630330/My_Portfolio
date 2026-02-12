@@ -129,6 +129,14 @@ function App() {
               <span className="button-text">💫 View My Work</span>
               <span className="button-icon">→</span>
             </button>
+            <a 
+              href="/PraveenReddy.pdf" 
+              download 
+              className="resume-button"
+            >
+              <span className="resume-icon">📄</span>
+              <span className="resume-text">Download Resume</span>
+            </a>
           </div>
           <div className="scroll-indicator" style={{ opacity: Math.max(0, 1 - scrollY / 300) }}>
             <span>↓ Scroll to explore ↓</span>
