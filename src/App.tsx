@@ -97,6 +97,13 @@ function App() {
             }}
           />
           <div className="hero-content">
+            <div className="profile-image-container">
+              <img 
+                src="/profile.jpg" 
+                alt="Jammana Praveen Kumar Reddy" 
+                className="profile-image"
+              />
+            </div>
             <div className="hero-title-wrapper">
               <h2 style={{ transform: `translateY(${scrollY * -0.3}px)` }} className="bubble-text">
                 <span>🧪</span>

@@ -304,6 +304,32 @@ section h3 {
   text-shadow: 0 0 30px rgba(0, 217, 255, 0.5), 0 0 60px rgba(0, 255, 136, 0.3);
 }
 
+/* ====== PROFILE IMAGE ====== */
+.profile-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  animation: fadeInDown 0.8s ease-out;
+}
+
+.profile-image {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid transparent;
+  background: linear-gradient(135deg, #0a0f1b, #1a2849) padding-box;
+  box-shadow: 0 0 40px rgba(0, 217, 255, 0.4), 0 0 80px rgba(0, 255, 136, 0.2), inset 0 0 40px rgba(168, 85, 247, 0.2);
+  transition: all var(--transition);
+  animation: float 3s ease-in-out infinite;
+}
+
+.profile-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 50px rgba(0, 217, 255, 0.6), 0 0 100px rgba(0, 255, 136, 0.3), inset 0 0 40px rgba(168, 85, 247, 0.3);
+}
+
 .hero-main-text {
   font-size: 1.3rem;
   margin-bottom: 1rem;
@@ -1240,6 +1266,11 @@ section h2::after {
     font-size: 2rem;
   }
 
+  .profile-image {
+    width: 150px;
+    height: 150px;
+  }
+
   .hero-main-text {
     font-size: 1rem;
   }
@@ -1323,6 +1354,11 @@ section h2::after {
     font-size: 1.6rem;
   }
 
+  .profile-image {
+    width: 140px;
+    height: 140px;
+  }
+
   .hero-main-text {
     font-size: 0.95rem;
   }
@@ -1392,6 +1428,11 @@ section h2::after {
   .hero-content h2 {
     font-size: 1.4rem;
     margin-bottom: 0.6rem;
+  }
+
+  .profile-image {
+    width: 130px;
+    height: 130px;
   }
 
   .hero-main-text {
